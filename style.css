@@ -1,3 +1,19 @@
+.birthstone-regular {
+    font-family: "Birthstone", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kaisei-harunoumi-regular {
+    font-family: "Kaisei HarunoUmi", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+body{
+    overflow-x: hidden;
+    
+}
 * {
     text-decoration: none;
     margin: 0;
@@ -6,7 +22,9 @@
 
 .navbar {
     background-color: #FBF2F2;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow here */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
 }
 
 .navdiv {
@@ -28,8 +46,9 @@ li a {
 }
 
 .title a {
-    font-size: 35px;
-    font-weight: 600;
+    font-family: 'Birthstone';
+    font-size: 55px;
+    font-weight: 250;
     color: rgb(0, 0, 0);
     margin-left: 30px;
 }
@@ -41,9 +60,169 @@ li a {
 
 .search input{
     align-items: center;
-    width: auto;
-    height: 30px;
-    border-radius: 10px;
+    width: 900px;
+    height: 35px;
+    border-radius: 15px;
     border: none;
+    padding-left: 20px;
+    outline: 2px solid black;
+    outline-offset: 2px;
 }
 
+.welcome h1#textbig{
+    color: #573F53;
+    font-family: 'Kaisei HarunoUmi';
+    font-size: 128px;
+    font-weight: 599;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 268px;
+    left: 196px;
+}
+
+.welcome p#textsmall{
+    color: #573F53;
+    font-family: 'Kaisei HarunoUmi';
+    font-size: 32px;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: inline-block;
+    top: 300px;
+    left: 191px;
+}
+
+.welcome p#textsmall .bloom{
+    color: #EE91AE;
+}
+
+.welcome p#textsmall::before {
+    content: ""; 
+    position: absolute; 
+    top: -10px; 
+    left: 0; 
+    right: 0; 
+    height: 2px; 
+    background-color: #573F53; 
+    z-index: -1; 
+    width: 110%;
+}
+
+.welcome .rounded-square {
+    position: absolute;
+    top: 300px; 
+    left: 1072px; 
+    width: 937px; 
+    height: 350px;
+    background-color: #FFDFE1; 
+    border-radius: 68px; 
+}
+
+.welcome .rounded-square img {
+    position: absolute;
+    top: -80px; 
+    left: 0; 
+}
+
+.welcome .welcome-btn {
+    position: absolute; 
+    left: 196px; 
+    top: 630px; 
+    width: 318px; 
+    height: 84px; 
+    background-color: #FFDFE1; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-family: 'Kaisei HarunoUmi';
+    font-size: 38px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.welcome-btn:hover {
+    background-color: #FFC0C6; 
+}
+
+.welcome .ench-love{
+    position: absolute; 
+    top: 850px;
+    left: 136px; 
+    width: 433px; 
+    height: 197px; 
+    background-color: #FFFFFF; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.welcome .ench-love img{
+    position: absolute;
+    height: auto;
+    width: 270px;
+    top: -75px;
+    left: 250px;
+}
+
+.welcome .ench-love p{
+    font-size: 24px;
+    font-family: 'Kaisei HarunoUmi';
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.welcome .boquet-orch{
+    position: absolute; 
+    top: 850px; 
+    left: 750px;
+    width: 433px; 
+    height: 197px; 
+    background-color: #FFFFFF; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.welcome .boquet-orch img{
+    position: absolute;
+    height: auto;
+    width: 270px;
+    top: -50px;
+    left: 220px;
+}
+
+.welcome .boquet-orch p{
+    font-size: 24px;
+    font-family: 'Kaisei HarunoUmi';
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.welcome .uplift-blooms{
+    position: absolute; 
+    top: 850px; 
+    left: 1350px; 
+    width: 433px; 
+    height: 197px; 
+    background-color: #FFFFFF; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.welcome .uplift-blooms img{
+    position: absolute;
+    height: auto;
+    width: 270px;
+    top: -50px;
+    left: 220px;
+}
+
+.welcome .uplift-blooms p{
+    font-size: 24px;
+    font-family: 'Kaisei HarunoUmi';
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
