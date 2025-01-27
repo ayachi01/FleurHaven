@@ -92,7 +92,7 @@
         android:layout_height="120dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="8dp"
-        android:background="#EFEFEF"
+        android:background="#FAFAFA"
         android:foregroundGravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -106,22 +106,25 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
+        android:elevation="10dp"
+        android:padding="10dp"
         android:background="@drawable/cartbackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.243" />
 
+    <!-- Product 2 added to cart -->
+
     <ImageView
         android:id="@+id/flowerimg1"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:elevation="10dp"
         app:srcCompat="@drawable/flower_sample"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="158dp" />
-
-    <!-- Product 2 added to cart -->
+        tools:layout_editor_absoluteY="157dp" />
 
     <View
         android:id="@+id/productview2"
@@ -129,7 +132,7 @@
         android:layout_height="120dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="8dp"
-        android:background="#EFEFEF"
+        android:background="#FAFAFA"
         android:foregroundGravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -144,6 +147,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
+        android:elevation="10dp"
+        android:padding="10dp"
         android:background="@drawable/cartbackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -154,6 +159,7 @@
         android:id="@+id/flowerimg2"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:elevation="10dp"
         app:srcCompat="@drawable/flower_sample"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
@@ -165,7 +171,7 @@
         android:layout_height="120dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="8dp"
-        android:background="#EFEFEF"
+        android:background="#FAFAFA"
         android:foregroundGravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -187,15 +193,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.926" />
 
-    <!-- BOTTOM NAVIGATION BAR -->
-
     <TextView
         android:id="@+id/tv_total"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/AlbertSans_Thin"
+        android:fontFamily="@font/AlbertSans_Light"
         android:text="@string/tvtotal"
         android:textSize="20sp"
+        android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="634dp" />
@@ -208,7 +213,7 @@
         android:background="@color/white"
         android:backgroundTint="#EEEEEE"
         android:text="@string/check_out"
-        android:fontFamily="@font/AlbertSans_Thin"
+        android:fontFamily="@font/AlbertSans_Light"
         android:textSize="13sp"
         tools:ignore="MissingConstraints,SmallSp"
         tools:layout_editor_absoluteX="300dp"
@@ -221,6 +226,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
+        android:elevation="10dp"
+        android:padding="10dp"
         android:background="@drawable/cartbackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -231,11 +238,14 @@
         android:id="@+id/flowerimg3"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:elevation="10dp"
         app:srcCompat="@drawable/flower_sample"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="435dp" />
 
+
+    <!-- BOTTOM NAVIGATION BAR -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -269,4 +279,3 @@
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
