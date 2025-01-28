@@ -1,0 +1,209 @@
+.birthstone-regular {
+    font-family: "Birthstone", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kaisei-harunoumi-regular {
+    font-family: "Kaisei HarunoUmi", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .junge-regular {
+    font-family: "Junge", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #FBF2F2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow here */
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "birthstone";
+    font-size: absolute;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+.title a {
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin-left: 30px;
+    font-family: "birthstone";
+}
+.search{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;    
+}
+
+.search input{
+    align-items: center;
+    width: 900px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    padding-left: 20px;
+    outline: 2px solid black;
+    outline-offset: 2px;
+}
+.h1{
+    color: #573F53;
+    font-family: 'Kaisei HarunoUmi';
+    font-size: 128px;
+    font-weight: 599;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 268px;
+    left: 196px;
+}
+.h2{
+    font-family: "Kaisei HarunoUmi", serif;
+    color: black;
+    border-color: #FFEFF0;
+    border: #FFEFF0;
+}
+.welcome h1#textbig{
+    color: #573F53;
+    font-family: 'Kaisei HarunoUmi';
+    font-size: 90px;
+    font-weight: 599;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 295x;
+    left: 520px;
+    padding-top: 60px;
+}
+.welcome p#textsmall{
+    color: #000000;
+    font-family: 'Kaisei HarunoUmi';
+    font-size: 25px;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: inline-block;
+    top: 10px;
+    left: 750px;
+}
+.welcome p#textsmall::before {/*the line*/
+    content: ""; 
+    position: absolute; 
+    top: -15px; 
+    left: -380%; 
+    right: 0; 
+    height: 2px; 
+    background-color: #573F53; 
+    z-index: -1; 
+    width: 850%;
+}
+.welcome {
+    position: relative; 
+    display: inline-block; 
+}
+.welcome .square {
+    background-color: #FFEFF0; 
+    position: absolute; 
+    top: 25px; 
+    left: 30%; 
+    right: 30%; 
+    bottom: 0; 
+    z-index: -1; 
+    padding: 10px; 
+    width: 220%;
+    height: 100%;
+}
+.welcome p {
+    position: relative;
+    color: black; 
+    margin: 0; 
+    padding: 10px; 
+}
+.catalogsubheading{
+    margin-top: 50px; /* Increase this value to move it down */
+    margin-bottom: 15px; /* Adjust as needed */
+    font-size: 25px;
+    color: #4a4a4a;
+    font-family: 'junge', serif;
+    margin-left: 155px;
+}
+.title{
+    font-family: junge;
+}
+.container {
+    display: flex; /* Use flexbox to arrange cards horizontally */
+    justify-content: center; /* Center the cards */
+    gap: 20px; /* Space between cards */
+}
+
+.card {
+    background-color: white; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    width: 200px; /* Set the width of each card */
+    text-align: center; /* Center text */
+    overflow: hidden;
+    margin: 10px;
+}
+
+.gradient{
+    position: relative;
+    width: 100%; /* Full width of the card */
+    height: 200px; /* Set the height of the gradient background */
+    background: linear-gradient(to right, #e5e4e4, #ffffff); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flower img {
+    max-width: 90%; /* Make the image responsive */
+    max-height: 90%; /* Make the image responsive */
+    position: relative; /* Position relative to the container */
+    z-index: 1; /* Ensure the image is above the gradient */
+}
+.button {
+    background-color: transparent; /* Button background color */
+    color: rgb(0, 0, 0); /* Button text color */
+    border: none; /* Remove default border */
+    padding: 10px 40px; /* Add padding to the button */
+    border-radius: 20px; /* Optional: rounded corners for the button */
+    border: 1px solid black;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */ 
+    opacity: 100px; 
+    font-family: junge;  
+}
+.button:hover {
+    background-color: #fa9a91;
+}
+.pink {
+    background-color: #FBD4DB; 
+    padding: 10px; 
+}
+.container {
+    display: flex; 
+    flex-direction: row; 
+    gap: 20px; 
+}
+
+
