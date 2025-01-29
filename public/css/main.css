@@ -91,7 +91,7 @@ li a {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     position: relative;
     top: 295x;
-    left: 30vw;
+    left: 520px;
     padding-top: 60px;
 }
 .welcome p#textsmall{
@@ -103,7 +103,7 @@ li a {
     position: relative;
     display: inline-block;
     top: 10px;
-    left: 42vw;
+    left: 750px;
 }
 .welcome p#textsmall::before {/*the line*/
     content: ""; 
@@ -124,7 +124,8 @@ li a {
     background-color: #FFEFF0; 
     position: absolute; 
     top: 25px; 
-    left: 15vw; 
+    left: 30%; 
+    right: 30%; 
     bottom: 0; 
     z-index: -1; 
     padding: 10px; 
