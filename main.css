@@ -109,12 +109,12 @@ li a {
     content: ""; 
     position: absolute; 
     top: -15px; 
-    left: -380%; 
-    right: 0; 
+    left: -200%; 
+    right: -800%; 
     height: 2px; 
     background-color: #573F53; 
     z-index: -1; 
-    width: 850%;
+    width: 500%;
 }
 .welcome {
     position: relative; 
