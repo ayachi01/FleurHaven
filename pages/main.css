@@ -9,17 +9,9 @@
     font-weight: 400;
     font-style: normal;
   }
-
-
-.junge-regular {
+  .junge-regular {
     font-family: "Junge", serif;
     font-weight: 400;
-    font-style: normal;
-}
-
-.albert-sans {
-    font-family: "Albert Sans", serif;
-    font-optical-sizing: auto;
     font-style: normal;
   }
 * {
@@ -53,16 +45,16 @@ li a {
 }
 
 .title a {
-    font-size: 50px;
-    font-weight: 50;
+    font-size: 35px;
+    font-weight: 600;
     color: rgb(0, 0, 0);
-    margin-left: 100px;
+    margin-left: 30px;
     font-family: "birthstone";
 }
 .search{
     display: flex;
     align-items: center;
-    margin-right: 20px;   
+    margin-right: 20px;    
 }
 
 .search input{
@@ -75,7 +67,6 @@ li a {
     outline: 2px solid black;
     outline-offset: 2px;
 }
-
 .h1{
     color: #573F53;
     font-family: 'Kaisei HarunoUmi';
@@ -86,18 +77,16 @@ li a {
     top: 268px;
     left: 196px;
 }
-
 .h2{
     font-family: "Kaisei HarunoUmi", serif;
     color: black;
     border-color: #FFEFF0;
     border: #FFEFF0;
 }
-
 .welcome h1#textbig{
     color: #573F53;
     font-family: 'Kaisei HarunoUmi';
-    font-size: 90px;
+    font-size: 91px;
     font-weight: 599;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     position: relative;
@@ -105,7 +94,6 @@ li a {
     left: 520px;
     padding-top: 60px;
 }
-
 .welcome p#textsmall{
     color: #000000;
     font-family: 'Kaisei HarunoUmi';
@@ -117,24 +105,21 @@ li a {
     top: 10px;
     left: 750px;
 }
-
 .welcome p#textsmall::before {/*the line*/
     content: ""; 
     position: absolute; 
     top: -15px; 
-    left: -380%; 
-    right: 0; 
+    left: -200%; 
+    right: -800%; 
     height: 2px; 
     background-color: #573F53; 
     z-index: -1; 
-    width: 850%;
+    width: 500%;
 }
-
 .welcome {
     position: relative; 
     display: inline-block; 
 }
-
 .welcome .square {
     background-color: #FFEFF0; 
     position: absolute; 
@@ -147,29 +132,27 @@ li a {
     width: 220%;
     height: 100%;
 }
-
 .welcome p {
     position: relative;
     color: black; 
     margin: 0; 
     padding: 10px; 
 }
-
 .catalogsubheading{
-    margin-top: 80px; /* Increase this value to move it down */
+    margin-top: 50px; /* Increase this value to move it down */
     margin-bottom: 15px; /* Adjust as needed */
     font-size: 25px;
-    color: #000000;
-    font-family: "Albert Sans";
+    color: #4a4a4a;
+    font-family: 'junge', serif;
     margin-left: 155px;
 }
 .title{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: junge;
 }
 .container {
     display: flex; /* Use flexbox to arrange cards horizontally */
     justify-content: center; /* Center the cards */
-    gap: 50px; /* Space between cards */
+    gap: 20px; /* Space between cards */
 }
 
 .card {
@@ -198,29 +181,29 @@ li a {
     position: relative; /* Position relative to the container */
     z-index: 1; /* Ensure the image is above the gradient */
 }
-
 .button {
     background-color: transparent; /* Button background color */
-    color: rgb(0, 0, 0); /* Button text color */    
+    color: rgb(0, 0, 0); /* Button text color */
+    border: none; /* Remove default border */
     padding: 10px 40px; /* Add padding to the button */
     border-radius: 20px; /* Optional: rounded corners for the button */
-    border: 1px solid rgb(39, 39, 39);
+    border: 1px solid black;
     cursor: pointer; /* Change cursor to pointer on hover */
-    transition: background-color 0.5s; /* Smooth transition for hover effect */ 
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
-    margin-top: 10px;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */ 
+    opacity: 100px; 
+    font-family: junge;  
 }
 .button:hover {
-    background-color: #f3ecebb2;
+    background-color: #fa9a91;
 }
 .pink {
-    background-color: #f166662e; 
+    background-color: #FBD4DB; 
     padding: 10px; 
 }
 .container {
     display: flex; 
     flex-direction: row; 
-    gap: 60px;
+    gap: 20px; 
 }
 
 
