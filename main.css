@@ -14,6 +14,16 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  
+    
+.albert-sans {
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+
 * {
     text-decoration: none;
     margin: 0;
@@ -142,12 +152,13 @@ li a {
     margin-top: 50px; /* Increase this value to move it down */
     margin-bottom: 15px; /* Adjust as needed */
     font-size: 25px;
-    color: #4a4a4a;
-    font-family: 'junge', serif;
+    color: #000000;
+    font-family: 'albert sans';
     margin-left: 155px;
 }
 .title{
-    font-family: junge;
+    font-family: 'albert sans';
+    font-size: 15px;
 }
 .container {
     display: flex; /* Use flexbox to arrange cards horizontally */
@@ -185,13 +196,15 @@ li a {
     background-color: transparent; /* Button background color */
     color: rgb(0, 0, 0); /* Button text color */
     border: none; /* Remove default border */
+    margin-top: 10px;
     padding: 10px 40px; /* Add padding to the button */
     border-radius: 20px; /* Optional: rounded corners for the button */
     border: 1px solid black;
     cursor: pointer; /* Change cursor to pointer on hover */
     transition: background-color 0.3s; /* Smooth transition for hover effect */ 
     opacity: 100px; 
-    font-family: junge;  
+    font-family: 'albert sans';  
+    font-size: 15px;
 }
 .button:hover {
     background-color: #fa9a91;
@@ -203,7 +216,7 @@ li a {
 .container {
     display: flex; 
     flex-direction: row; 
-    gap: 20px; 
+    gap: 60px; 
 }
 
 
