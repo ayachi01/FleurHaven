@@ -103,22 +103,26 @@ li a {
     position: relative;
     display: inline-block;
     top: 10px;
-    left: 750px;
+    left: 500px;
 }
 .welcome p#textsmall::before {/*the line*/
     content: ""; 
     position: absolute; 
     top: -15px; 
-    left: -200%; 
-    right: -800%; 
+    left: -280%; 
+    right: -100%; 
     height: 2px; 
     background-color: #573F53; 
     z-index: -1; 
-    width: 500%;
+    width: 700%;
 }
 .welcome {
-    position: relative; 
-    display: inline-block; 
+    position: fixed; /* Fixes the position relative to the viewport */
+    top: 50px; /* Distance from the top of the viewport */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-140%); /* Adjust to center the element */
+    display: inline-block;
+    text-align: center;
 }
 .welcome .square {
     background-color: #FFEFF0; 
@@ -138,13 +142,17 @@ li a {
     margin: 0; 
     padding: 10px; 
 }
-.catalogsubheading{
-    margin-top: 50px; /* Increase this value to move it down */
-    margin-bottom: 15px; /* Adjust as needed */
-    font-size: 25px;
+.catalogsubheading {
+    position: fixed; /* Fixes the position relative to the viewport */
+    top: 350px; 
+    left: 12%; 
+    transform: translateX(-100); /* Adjust to center the element */
+    margin-bottom: 15px; 
+    font-size: 30px; 
     color: #4a4a4a;
-    font-family: 'junge', serif;
-    margin-left: 155px;
+    font-family: 'junge', serif; 
+    z-index: 1; 
+    text-align: left; 
 }
 .title{
     font-family: junge;
@@ -153,6 +161,7 @@ li a {
     display: flex; /* Use flexbox to arrange cards horizontally */
     justify-content: center; /* Center the cards */
     gap: 20px; /* Space between cards */
+    margin-top: 360px;
 }
 
 .card {
@@ -162,7 +171,6 @@ li a {
     width: 200px; /* Set the width of each card */
     text-align: center; /* Center text */
     overflow: hidden;
-    margin: 10px;
 }
 
 .gradient{
@@ -205,5 +213,6 @@ li a {
     flex-direction: row; 
     gap: 20px; 
 }
+
 
 
