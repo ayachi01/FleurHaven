@@ -42,13 +42,14 @@
 
 
 .navbar {
-    background-color: #fdfdfd;
+    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: fixed;
+    opacity: 1;
     width: 100%;
 }
 
 .navdiv {
+    background-color: #fdfdfd;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,9 +62,12 @@ li {
 }
 
 li a {
+    font-family: 'albert sans';
     color: rgb(0, 0, 0);
     font-size: 20px;
     margin-right: 30px;
+    font-weight: 300;
+    margin-right: 35px;
 }
 
 .title a {
@@ -91,64 +95,48 @@ li a {
     border: #FFEFF0;
 }
 .welcome h1#textbig{
-    color: #573F53;
-    font-family: 'Kaisei HarunoUmi';
+    text-align: center;
+    color: #695566;
+    font-family: 'Birthstone';
     font-size: 91px;
     font-weight: 599;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    position: relative;
-    top: 295x;
-    left: 520px;
-    padding-top: 60px;
-}
-.welcome p#textsmall{
-    color: #000000;
-    font-family: 'Kaisei HarunoUmi';
-    font-size: 25px;
-    font-weight: 500;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    position: relative;
-    display: inline-block;
-    top: 10px;
-    left: 750px;
-}
-.welcome p#textsmall::before {/*the line*/
-    content: ""; 
-    position: absolute; 
-    top: -15px; 
-    left: -200%; 
-    right: -800%; 
-    height: 2px; 
-    background-color: #573F53; 
-    z-index: -1; 
-    width: 500%;
+    
 }
 .welcome {
-    position: relative; 
-    display: inline-block; 
+    position: relative; /* Ensure the welcome class is positioned relative for absolute positioning of the line */
+    text-align: center; /* Center text within the welcome class */
 }
-.welcome .square {
-    background-color: #FFEFF0; 
-    position: absolute; 
-    top: 25px; 
-    left: 30%; 
-    right: 30%; 
-    bottom: 0; 
-    z-index: -1; 
-    padding: 10px; 
-    width: 220%;
-    height: 100%;
+
+.welcome p#textsmall {
+    color: #000000;
+    font-family: 'albert sans';
+    font-size: 25px;
+    font-weight: 300;
+    position: relative; /* Position relative to allow absolute positioning of the line */
+    margin: 20px 0; /* Add some margin for spacing */
 }
+
+.welcome p#textsmall::after { /* The line */
+    content: ""; 
+    display: block; /* Make it a block element */
+    height: 1px; 
+    background-color: #838082; 
+    width: 70%; /* Set the width of the line */
+    margin: 10px auto 0; /* Center the line and add space above it */
+}
+
 .welcome p {
     position: relative;
     color: black; 
     margin: 0; 
     padding: 10px; 
 }
+
+
 .catalogsubheading{
     margin-top: 50px; /* Increase this value to move it down */
     margin-bottom: 15px; /* Adjust as needed */
-    font-size: 25px;
+    font-size: 30px;
     color: #000000;
     font-family: 'albert sans';
     margin-left: 155px;
@@ -160,7 +148,7 @@ li a {
 .container {
     display: flex; /* Use flexbox to arrange cards horizontally */
     justify-content: center; /* Center the cards */
-    gap: 20px; /* Space between cards */
+    gap: 10px; /* Space between cards */
 }
 
 .card {
@@ -213,7 +201,7 @@ li a {
 .container {
     display: flex; 
     flex-direction: row; 
-    gap: 60px; 
+    gap: 50px; 
 }
 
 

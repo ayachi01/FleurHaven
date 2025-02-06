@@ -56,9 +56,12 @@ li {
 }
 
 li a {
+    font-family: 'albert sans';
     color: rgb(0, 0, 0);
     font-size: 20px;
     margin-right: 30px;
+    font-weight: 300;
+    margin-right: 35px;
 }
 
 .title a {
@@ -226,4 +229,8 @@ li a {
     position: absolute;
     top: 50px;
     left: 20px;
+}
+
+hr{
+    width: 50%;
 }
