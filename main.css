@@ -24,10 +24,16 @@
   }
 
 
+ 
+
 * {
     text-decoration: none;
     margin: 0;
     padding: 0;
+}
+
+body{
+    background-color: #fafafa;
 }
 
 .material-symbols-outlined{
@@ -74,7 +80,7 @@ li a {
     font-family: 'Birthstone';
     font-size: 55px;
     font-weight: 250;
-    color: rgb(0, 0, 0);
+    color: #695566;
     margin-left: 50px;
 }
 
@@ -140,10 +146,11 @@ li a {
     color: #000000;
     font-family: 'albert sans';
     margin-left: 155px;
+    font-weight: 300;
 }
 .title{
     font-family: 'albert sans';
-    font-size: 15px;
+    font-size: 18px;
 }
 .container {
     display: flex; /* Use flexbox to arrange cards horizontally */
@@ -155,7 +162,7 @@ li a {
     background-color: white; /* Card background color */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    width: 200px; /* Set the width of each card */
+    width: 210px; /* Set the width of each card */
     text-align: center; /* Center text */
     overflow: hidden;
     margin: 10px;
@@ -171,9 +178,8 @@ li a {
     align-items: center;
 }
 
-.flower img {
-    max-width: 90%; /* Make the image responsive */
-    max-height: 90%; /* Make the image responsive */
+.flower img { /* Make the image responsive */
+    max-height: 100%; /* Make the image responsive */
     position: relative; /* Position relative to the container */
     z-index: 1; /* Ensure the image is above the gradient */
 }
@@ -195,13 +201,19 @@ li a {
     background-color: #fa9a91;
 }
 .pink {
-    background-color: #FBD4DB; 
+    background-color: #efc6d7; 
     padding: 10px; 
 }
 .container {
     display: flex; 
     flex-direction: row; 
     gap: 50px; 
+}
+
+p{
+    font-family: 'albert sans';
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 

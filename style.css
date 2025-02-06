@@ -78,18 +78,16 @@ li a {
     font-family: 'Kaisei HarunoUmi';
     font-size: 128px;
     font-weight: 599;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     position: relative;
     top: 268px;
     left: 196px;
 }
 
 .welcome p#textsmall{
-    color: #573F53;
+    color: #000000;
     font-family: 'albert sans';
     font-size: 32px;
-    font-weight: 500;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 300;
     position: relative;
     display: inline-block;
     top: 300px;
@@ -107,7 +105,7 @@ li a {
     left: 0; 
     right: 0; 
     height: 2px; 
-    background-color: #573F53; 
+    background-color: #000000; 
     z-index: -1; 
     width: 110%;
 }
