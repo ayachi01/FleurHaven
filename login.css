@@ -3,70 +3,85 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgba(219, 218, 218, 0.678);
+    background-color: rgba(202, 202, 202, 0.795);
+    
 }
 
 .albert-sans {
     font-family: "Albert Sans", serif;
     font-optical-sizing: auto;
     font-style: normal;
-  }
+}
 
-.page{
+.container {
+    max-width: 1200px;
+    width: 900px;
+    background: #fff;
+    margin: 0 auto;
+    box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);    
+}
+
+.signup-content {
+    padding: 75px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+    align-items: center; /* Center items vertically */
+}
+
+.page {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
     width: 100%;
     height: 100vh;
 }
 
-.formLogin{
+.signup-image {
+    margin-right: 50px; /* Space between image and form */
+    max-width: 300px; /* Adjust the size of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.formLogin {
     display: flex;
     flex-direction: column;
-    padding: 90px;
-    border-radius: 2px;
     background-color: white;
     gap: 10px;
-    font-family: 'albert sans';
+    font-family: 'Albert Sans';
     width: 400px;
 }
 
-.formLogin h1{
+.formLogin h1 {
     font-size: 30px;
     font-weight: 700;
     text-align: center;
-
 }
 
-.formLogin input{
+.formLogin input {
     padding: 15px;
     font-size: 14px;
-    border: 1px solid rgb(230, 230, 230);
-    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
-    
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.formLogin label{
+.formLogin label {
     font-size: 15px;
 }
 
-.formLogin a{
+.formLogin a {
     display: inline-block;
     margin-block: 20px;
     font-size: 15px;
-    text-align: right;
 }
 
-.btn{
-    margin-top: 50px;
-    font-family: 'albert sans';
-    background-color: #EFEFEF;
-    transition: background-color 3 transform 0.5 ease;
-
+.btn {
+    font-family: 'Albert Sans';
+    background-color: #ffdffb;
+    transition: background-color 0.3s; /* Fixed transition duration */
+    display: block; /* Make the button a block element */
+    margin-top: 40px;
 }
 
-.btn:hover{
-    background-color: rgb(242, 223, 243);
+.btn:hover {
+    background-color: rgb(255, 255, 255);
 }

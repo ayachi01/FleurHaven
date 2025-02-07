@@ -81,7 +81,7 @@ li a {
     font-size: 55px;
     font-weight: 250;
     color: #695566;
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 .h1{
@@ -161,9 +161,8 @@ li a {
 .card {
     background-color: white; /* Card background color */
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    width: 210px; /* Set the width of each card */
-    text-align: center; /* Center text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    width: 230px; /* Set the width of each card */
     overflow: hidden;
     margin: 10px;
 }
@@ -184,36 +183,43 @@ li a {
     z-index: 1; /* Ensure the image is above the gradient */
 }
 .button {
+    display: block; /* Make the button a block element */
     background-color: transparent; /* Button background color */
     color: rgb(0, 0, 0); /* Button text color */
     border: none; /* Remove default border */
-    margin-top: 10px;
+    margin: 10px auto; /* Center the button and add top margin */
     padding: 10px 40px; /* Add padding to the button */
-    border-radius: 20px; /* Optional: rounded corners for the button */
-    border: 1px solid black;
+    border-radius: 10px; /* Optional: rounded corners for the button */
+    border: 1px solid black; /* Border for the button */
     cursor: pointer; /* Change cursor to pointer on hover */
     transition: background-color 0.3s; /* Smooth transition for hover effect */ 
-    opacity: 100px; 
-    font-family: 'albert sans';  
+    font-family: 'Albert Sans';  
     font-size: 15px;
 }
+
 .button:hover {
-    background-color: #fa9a91;
+    background-color: #f3f3f3;
 }
 .pink {
-    background-color: #efc6d7; 
+    background-color:#ffecec; 
     padding: 10px; 
 }
 .container {
     display: flex; 
     flex-direction: row; 
     gap: 50px; 
+    align-items: center;
 }
 
-p{
+.price{
     font-family: 'albert sans';
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 10px;
 }
 
+.description{
+    font-family: 'albert sans';
+    font-weight: 300;
+    margin: 10px;
+}
 
