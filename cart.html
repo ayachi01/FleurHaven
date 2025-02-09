@@ -22,7 +22,7 @@
      <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS v5.2.1 -->
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="cart.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle,shopping_cart" />
 </head>
 
@@ -55,29 +55,57 @@
     </nav>
     <main>
         <!-- Main content goes here -->
-         <div class="welcome">
-            <h1 id="textbig">Fleur Haven</h1>
-            <p id="textsmall">Reserve the beauty, Share the <span class="bloom">bloom</span>.</p>
-            <div class="rounded-square">
-                <img src="assets/welcome-flower-img.png" alt="welcome-img">
+        <div class="container">
+            <div class="shopping-cart">
+                <h1>Shopping Cart</h1>
             </div>
-            <a href="main.html" button class="welcome-btn"> Shop Now </a>
-            <div class="ench-love">
-                <img src="../FleurHaven/assets/ench-love-img.png" alt="enchanted-love">
-                <p>Enchanted Love</p>
+            <div class="square">
+                <div class="product-info">
+                    <h2>Product</h2>
+                    <h2 id="price">Price</h2>
+                </div>
+                <div class="line"></div>
+                <a href="#popup" class="checkout">Checkout</a> 
             </div>
-            <div class="boquet-orch">
-                <img src="../FleurHaven/assets/boquet-orch-img.png" alt="boquet-of-orchids">
-                <p>Boquet of Orchids</p>
+        </div>
+        
+        <!-- Popup  -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a> 
+                <h2>Order Options</h2>               
+                <div class="options">
+                    <label>
+                        <input type="radio" name="delivery" value="pickup">
+                        <span></span> In-store Pickup
+                    </label>
+                    <label>
+                        <input type="radio" name="delivery" value="delivery">
+                        <span></span> Delivery
+                    </label>
+                </div>
+        
+                <div class="options">
+                    <h3>Select Payment Method:</h3>
+                    <label>
+                        <input type="radio" name="payment" value="credit-card">
+                        <span></span> E-Wallet
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="cash">
+                        <span></span> Cash on Delivery
+                    </label>
+                </div>
+                <div class="line"></div>
+                <!-- Order Summary Section -->
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <p>Items:</p>
+                <p id="total">Total:</p>
             </div>
-            <div class="uplift-blooms">
-                <img src="../FleurHaven/assets/uplift-bloom-img.png" alt="uplifting-blooms">
-                <p>Uplifting Blooms</p>
-            </div>
-         </div>
-
-
-
+            <button class="place-order">Place Order</button>
+        </div>
+    </div>   
     </main>
     <footer>
         <!-- Place footer here -->

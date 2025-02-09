@@ -4,7 +4,6 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: rgba(202, 202, 202, 0.795);
-    
 }
 
 .albert-sans {
@@ -56,16 +55,20 @@ body {
     text-align: center;
 }
 
-.formLogin input {
-    padding: 15px;
-    font-size: 14px;
+.formLogin input[type="email"],
+.formLogin input[type="password"] {
+    padding: 12px;
+    font-size: 16px;
     border: 1px solid #ebebeb;
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Make input fields take full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
 }
 
 .formLogin label {
-    font-size: 15px;
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
 .formLogin a {
@@ -74,14 +77,95 @@ body {
     font-size: 15px;
 }
 
-.btn {
-    font-family: 'Albert Sans';
-    background-color: #ffdffb;
-    transition: background-color 0.3s; /* Fixed transition duration */
-    display: block; /* Make the button a block element */
-    margin-top: 40px;
+.submit-btn {
+    font-family: 'Albert Sans', sans-serif;
+    background-color: #FBD4DB; /* Pink color */
+    color: black;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%; /* Makes the button same width as the input fields */
+    height: 50px; /* Adjust height as needed */
+    
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+    transition: all 0.3s ease;
 }
 
-.btn:hover {
-    background-color: rgb(255, 255, 255);
+.submit-btn:hover {
+    background-color: #FFC0CB; /* Lighter pink */
+}
+
+.submit-btn:active {
+    background-color: #F9A7B0;
+    transform: scale(0.98);
+}
+
+
+/* Error message styling */
+.error {
+    background-color: #F8D7DA;
+    color: #721C24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Password container styles */
+.password-container {
+    position: relative;
+}
+
+.password-container .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.password-container .toggle-password:hover {
+    color: #333;
+    transform: scale(1.2);
+}
+
+/* Focus styles for input fields */
+.formLogin input[type="email"]:focus,
+.formLogin input[type="password"]:focus {
+    border-color: #FBD4DB;
+    box-shadow: 0 0 5px rgba(255, 192, 203, 0.5);
+}
+
+/* Placeholder styles */
+.formLogin input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .formLogin {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .signup-image {
+        display: none; /* Hide image on small screens */
+    }
 }
