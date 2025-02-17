@@ -1,0 +1,226 @@
+.birthstone-regular {
+    font-family: "Birthstone", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kaisei-harunoumi-regular {
+    font-family: "Kaisei HarunoUmi", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .junge-regular {
+    font-family: "Junge", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+    
+.albert-sans {
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+
+ 
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fafafa;
+}
+
+.material-symbols-outlined{
+    margin-right: 10px;
+    font-size: 100px;
+    font-variation-settings:
+          'FILL' 1,
+          'wght' 500,
+          'GRAD' 10,
+          'opsz' 24
+}
+
+
+.navbar {
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    width: 100%;
+}
+
+.navdiv {
+    background-color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    font-family: 'albert sans';
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-right: 30px;
+    font-weight: 300;
+    margin-right: 35px;
+}
+
+.title a {
+    font-family: 'Birthstone';
+    font-size: 55px;
+    font-weight: 250;
+    color: #695566;
+    margin-left: 100px;
+}
+
+.h1{
+    color: #573F53;
+    font-family: 'Kaisei HarunoUmi';
+    font-size: 128px;
+    font-weight: 599;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 268px;
+    left: 196px;
+}
+.h2{
+    font-family: "Kaisei HarunoUmi", serif;
+    color: black;
+    border-color: #FFEFF0;
+    border: #FFEFF0;
+}
+.welcome h1#textbig{
+    text-align: center;
+    color: #695566;
+    font-family: 'Birthstone';
+    font-size: 91px;
+    font-weight: 599;
+    
+}
+.welcome {
+    position: relative; /* Ensure the welcome class is positioned relative for absolute positioning of the line */
+    text-align: center; /* Center text within the welcome class */
+}
+
+.welcome p#textsmall {
+    color: #000000;
+    font-family: 'albert sans';
+    font-size: 25px;
+    font-weight: 300;
+    position: relative; /* Position relative to allow absolute positioning of the line */
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+.welcome p#textsmall::after { /* The line */
+    content: ""; 
+    display: block; /* Make it a block element */
+    height: 1px; 
+    background-color: #838082; 
+    width: 70%; /* Set the width of the line */
+    margin: 10px auto 0; /* Center the line and add space above it */
+}
+
+.welcome p {
+    position: relative;
+    color: black; 
+    margin: 0; 
+    padding: 10px; 
+}
+
+
+.catalogsubheading{
+    margin-top: 50px; /* Increase this value to move it down */
+    margin-bottom: 15px; /* Adjust as needed */
+    font-size: 30px;
+    color: #000000;
+    font-family: 'albert sans';
+    margin-left: 155px;
+    font-weight: 300;
+}
+.title{
+    font-family: 'albert sans';
+    font-size: 18px;
+}
+.container {
+    display: flex; /* Use flexbox to arrange cards horizontally */
+    justify-content: center; /* Center the cards */
+    gap: 10px; /* Space between cards */
+}
+
+.card {
+    background-color: white; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    width: 230px; /* Set the width of each card */
+    overflow: hidden;
+    margin: 10px;
+}
+
+.gradient{
+    position: relative;
+    width: 100%; /* Full width of the card */
+    height: 200px; /* Set the height of the gradient background */
+    background: linear-gradient(to right, #e5e4e4, #ffffff); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flower img { /* Make the image responsive */
+    max-height: 100%; /* Make the image responsive */
+    position: relative; /* Position relative to the container */
+    z-index: 1; /* Ensure the image is above the gradient */
+}
+.button {
+    display: block; /* Make the button a block element */
+    background-color: transparent; /* Button background color */
+    color: rgb(0, 0, 0); /* Button text color */
+    border: none; /* Remove default border */
+    margin: 10px auto; /* Center the button and add top margin */
+    padding: 10px 40px; /* Add padding to the button */
+    border-radius: 10px; /* Optional: rounded corners for the button */
+    border: 1px solid black; /* Border for the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */ 
+    font-family: 'Albert Sans';  
+    font-size: 15px;
+}
+
+.button:hover {
+    background-color: #f3f3f3;
+}
+.pink {
+    background-color:#ffecec; 
+    padding: 10px; 
+    height: 250px;
+}
+.container {
+    display: flex; 
+    flex-direction: row; 
+    gap: 50px; 
+    align-items: center;
+}
+
+.price{
+    font-family: 'albert sans';
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.description{
+    font-family: 'albert sans';
+    font-weight: 300;
+    margin: 10px;
+}
+
